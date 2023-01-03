@@ -29,6 +29,7 @@ public class DpRootDetect extends CordovaPlugin {
             JSONArray args,
             CallbackContext callbackContext)
             throws JSONException {
+        System.out.println("METHOD ACTION -> " + action);
         if (action.equals("coolMethod")) {
             String echo = args.getString(0);
             System.out.println("Args in execute");
