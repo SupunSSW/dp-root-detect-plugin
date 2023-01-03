@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugins-dp-root" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DpRootDetect</name>
+    <js-module name="DpRootDetect" src="www/DpRootDetect.js">
+        <clobbers target="dprootdetect"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DpRootDetect">
+                <param name="android-package" value="com.dprootdetect.plugin.DpRootDetect"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+        <source-file src="src/android/com/dprootdetect/plugin/DpRootDetect.java" target-dir="src/com/dprootdetect/plugin"/>
+    </platform>
+</plugin>

@@ -1,0 +1,17 @@
+{
+    "name": "cordova-plugins-dp-root",
+    "version": "0.0.1",
+    "description": "",
+    "cordova": {
+        "id": "cordova-plugins-dp-root",
+        "platforms": [
+            "android"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android"
+    ],
+    "author": "",
+    "license": "null"
+}
