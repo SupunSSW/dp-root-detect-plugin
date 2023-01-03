@@ -31,6 +31,8 @@ public class DpRootDetect extends CordovaPlugin {
             throws JSONException {
         if (action.equals("coolMethod")) {
             String echo = args.getString(0);
+            System.out.println("Args in execute");
+            System.out.println(echo);
             return true;
         }
         return false;
